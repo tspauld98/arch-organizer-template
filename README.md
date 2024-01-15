@@ -1,6 +1,6 @@
-# Basic Docsify Github Template
+# Architecture Organizer Template
 
-This project is a basic template for creating a documentation site using [docsify](https://docsify.js.org/#/) and hosting it on [Github Pages](https://pages.github.com/). Docsify is a lightweight documentation framework that uses markdown files to generate a documentation site. It also has a rich community of plugins that can extend and customize the framework. Since sorting through all the plugins can be a bit overwhelming, this project has curated and integrated the most useful plugins to get you started.
+This project is a template for creating and documenting the architecture of a system built with software.
 
 ## Getting Started
 
