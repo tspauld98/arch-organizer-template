@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Documentation Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="./_media/favicon.ico">
+
+  <!-- Theme: Simple (light + dark) -->
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./_vendors/docsify-themeable-0.9.0/dist/css/theme-simple.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./_vendors/docsify-themeable-0.9.0/dist/css/theme-simple-dark.css">
+
+  <!-- Disabled gitalk plugin because it requires the saving a client secret in code which is insecure. -->
+  <!-- <link rel="stylesheet" href="./_vendors/gitalk-1.8.0/dist/gitalk.css" /> -->
+
+  <link rel="stylesheet" href="./_vendors/docsify-accordion-0.0.3/src/style.css">
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      /* --theme-hue: 325; */
+      --sidebar-width: 20rem;
+    }
+    .accordion {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .accordion.active {
+      background: rgba(0, 0, 0, 0.1);
+      border-left: 3px solid hsl( 204 , 90% , 45% );
+    }
+    ul.accordion-wrapper > li > .accordion-content-container {
+      color: black;
+    }
+    .arrow {
+      border: solid hsl( 204 , 90% , 45% );
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 4px;
+      float: right;
+      margin-top: 1.25%;
+    }
+    .footer-text-author > a {
+      color: #fff;
+    }
+    .footer-text-author > a:hover {
+      color: #fff;
+      text-decoration-line: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <footer id="mb-footer"></footer>
+  <script>
+    var num = 0;
+
+    window.$docsify = {
+      name: 'Project Documentation Template',
+      repo: 'https://github.com/tspauld98/basic-docsify-gh-template',
+      logo: "_media/logo-gimp.png",
+      loadNavbar: false,
+      search: {
+        depth: 3,
+        noData: 'No results!'
+      },
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 2,
+      auto2top: true,
+      plantuml: {
+        skin: 'default',
+      },
+      mermaidConfig: {
+        querySelector: ".mermaid"
+      },
+      mermaidZoom: {
+          minimumScale: 1,
+          maximumScale: 5,
+          zoomPannel: false
+      },
+      autoFooter: {
+        name: "Battle Road Consulting",
+        url: "https://www.battleroadconsulting.com",
+        copyYear:    "2013",
+        policy:      false,
+        terms:       false,
+        cookies:     false,
+        customStyle: "body"
+      }
+    }
+  </script>
+
+  <script src="./_vendors/docsify-4.13.1/lib/docsify.js"></script>
+  <script src="./_vendors/docsify-4.13.1/lib/plugins/search.js"></script>
+  <!-- Disabled gitalk plugin because it requires the saving a client secret in code which is insecure. -->
+  <!-- <script src="./_vendors/docsify-4.13.1/lib/plugins/gitalk.js"></script> -->
+  <!-- <script src="./_vendors/gitalk-1.8.0/dist/gitalk.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Iv1.71397fcbdb45fa39',
+      clientSecret: '***************',
+      repo: 'basic-docsify-gh-template',      // The repository of store comments,
+      owner: 'tspauld98',
+      admin: ['tspauld98']
+      //id: location.pathname,      // Ensure uniqueness and length less than 50
+      //distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+  </script> -->
+  <script src="./_vendors/docsify-4.13.1/lib/plugins/zoom-image.js"></script>
+
+  <script src="./_vendors/docsify-accordion-0.0.3/src/index.js"></script>
+  <script src="./_vendors/docsify-copy-code-3.0.0/dist/docsify-copy-code.js"></script>
+
+  <script type="module">
+    import mermaid from "./_vendors/mermaid-10.6.1/dist/mermaid.esm.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="./_vendors/docsify-mermaid-2.0.1/dist/docsify-mermaid.js"></script>
+  <!-- Disabled mermaid-zoom due to errors and bugs -->
+  <!-- <script src="./_vendors/d3-7.8.5/dist/d3.js"></script> -->
+  <!-- <script src="./_vendors/docsify-mermaid-zoom-3.0.0/dist/docsify-mermaid-zoom.js"></script> -->
+
+  <script src="./_vendors/docsify-pagination-2.10.1/dist/docsify-pagination.js"></script>
+  <script src="./_vendors/docsify-plantuml-1.3.2/dist/docsify-plantuml.js"></script>
+  <script src="./_vendors/docsify-sidebarfooter-5.0.6/dist/docsify-sidebar.min.js"></script>
+  <script src="./_vendors/docsify-tabs-1.6.0/dist/docsify-tabs.js"></script>
+  <script src="./_vendors/docsify-themeable-0.9.0/dist/js/docsify-themeable.js"></script>
+</body>
+</html>
