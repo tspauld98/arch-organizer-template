@@ -147,3 +147,11 @@ The following dependencies and plugins are currently configured and included in 
 - [docsify-tabs v1.6.0](https://www.npmjs.com/package/docsify-tabs)
 - [docsify-themeable v0.9.0](https://www.npmjs.com/package/docsify-themeable)
 - [gitalk v1.8.0](https://www.npmjs.com/package/gitalk)
+
+## Future Enhancements
+
+- [ ] Fix the logo.
+- [ ] Fix the sidebar and pagination to work with individual artifact pages.
+- [ ] Add placeholder files for each artifact type.
+- [ ] Update the Overview page to describe the architecture organizer.
+- [ ] Update the placeholder files to contain example artifacts.
