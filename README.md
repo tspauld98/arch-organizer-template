@@ -1,6 +1,6 @@
 # Architecture Organizer Template
 
-This project is a template for creating and documenting the architecture of a system built with software.
+This project is a template for creating and documenting the architecture of a system built with software.  This template is based on the [Basic Docsify Github Template](https://github.com/tspauld98/basic-docsify-gh-template) and is designed to be used as a starting point for creating an architecture for a software project, an online service, or an entire platform.  Just like the Basic Docsify Github Template, this template is designed to be used as a standalone documentation repository or as a documentation site that is part of a larger project and is intended to be hosted on Github Pages.  You can find out more about the Basic Docsify Github Template by visiting the [Basic Docsify Github Template](https://github.com/tspauld98/basic-docsify-gh-template) repository.
 
 ## Getting Started
 
