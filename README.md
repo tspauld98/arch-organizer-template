@@ -92,7 +92,7 @@ Make sure the following software is installed on your system:
 
 This process assumes you have the prerequisites installed on your system and that you have used one of the methods above to create your documentation repository.  It also assumes that you have cloned the repository to your local system.
 
-1. Make changes to the markdown files in the `docs` folder.  Mermaid and PlantUML are integrated with Docsify, so you can use them to create diagrams and illustrations in your documentation to support the text content.
+1. Make changes to the markdown files in the `docs` folder to add, modify, or delete artifacts in the described levels of abstraction.  Mermaid and PlantUML are integrated with Docsify, so you can use them to create diagrams and illustrations in your documentation to support the text content.
 2. If you add or remove markdown files, you will need to update the `_sidebar.md` file to add or remove links to the files.
 3. Commit the changes to the local repository.
 4. Run the following command to serve the documentation site locally:
@@ -145,13 +145,3 @@ The following dependencies and plugins are currently configured and included in 
 - [docsify-tabs v1.6.0](https://www.npmjs.com/package/docsify-tabs)
 - [docsify-themeable v0.9.0](https://www.npmjs.com/package/docsify-themeable)
 - [gitalk v1.8.0](https://www.npmjs.com/package/gitalk)
-
-## Future Enhancements
-
-- [x] ~~Add a LICENSE file~~
-- [x] ~~Add a robot.txt file~~
-- [ ] Add a CONTRIBUTING file
-- [ ] Add a CODE_OF_CONDUCT file
-- [ ] Add a SECURITY file
-- [ ] Add a CHANGELOG file
-- [ ] Set up a .github folder
