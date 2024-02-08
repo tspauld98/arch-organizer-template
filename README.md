@@ -64,19 +64,21 @@ Once you have the contents from the template repository in your existing reposit
 
 ## Developing Your Documentation
 
-There are many methodologies and notations for documenting system and software design. An architecture organizer is a light-weight set of artifacts that focus on minimally describing the design at key levels of abstraction.  These levels of abstraction are defined to group the artifacts by the intended audience.  For example, the artifacts intended to brief leadership or business stakeholders are different from the artifacts intended to brief developers or operations staff.  The following levels of abstraction are used in this template:
+There are many methodologies and notations for documenting system and software design. An architecture organizer is a light-weight set of artifacts that focus on minimally describing the design at key levels of abstraction.  While the structure of the organizer is opinionated, the methodologies and notations used by the artifacts themselves is open to the author.  Although the methodology and notation used is unopinionated, it's important to be consistent throughout the artifacts in the organizer so avoid using multiple notations or methodologies in a single organizer.
 
-- **Logical View**: Describes the business problem and the solution in terms of the system's components and their interactions.
+The levels of abstraction in the organizer are defined to group the artifacts by the intended audience.  For example, the artifacts intended to brief leadership or business stakeholders are different from the artifacts intended to brief developers or operations staff.  The following levels of abstraction are used in this template:
+
+- ***Logical View***: Describes the business problem and the solution in terms of the system's components and their interactions.
   - **Intended Audience**: Business stakeholders and technical leadership
   - **Abstraction Level**: Kite Level
-- **Deployment View**: Describes the physical infrastructure and the deployment of the system's components.
+- ***Deployment View***: Describes the physical infrastructure and the deployment of the system's components.
   - **Intended Audience**: Technical leadership such as architects, developers, operations staff, and technical parters such as security and compliance teams
   - **Abstraction Level**: Sea Level
-- **Detailed View**: Describes the detailed internal design of the system's components.
+- ***Detailed View***: Describes the detailed internal design of the system's components.
   - **Intended Audience**: Developers, operations staff, and technical partners such as security and compliance teams
   - **Abstraction Level**: Fish Level
 
-In additions to the artifacts organized by these levels of abstraction, there is an area for documenting any formal decisions made in order to complete the architecture.  This section is called the **Decision Log**.  The scope of the decisions in this section should be limited to the scope of the architecture.
+In additions to the artifacts organized by these levels of abstraction, there is an area for documenting any formal decisions made in order to complete the architecture.  This section is called the ***Decision Log***.  The scope of the decisions in this section should be limited to the scope of the architecture.
 
 An architecture organizer is a living document that evolves as the system it describes evolves.  This means that the documentation site will need to be updated as the system changes.  The following process can be used to develop the documentation site:
 
