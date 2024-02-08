@@ -4,11 +4,9 @@ This project is a template for creating and documenting the architecture of a sy
 
 ## Getting Started
 
-TODO: Modify the following section to match your project.
+There are two methods for utilizing this repository as a template for your own documentation site. The first method is to use the Github template feature. This will create a new repository in your account that is a copy of this repository. This method is very convenient and well-suited for a standalone documentation repository. Most architectures span multiple components from multiple repositories, so this method should be used for any project bigger than a single component.
 
-There are two methods for utilizing this repository as a template for your own documentation site. The first method is to use the Github template feature. This will create a new repository in your account that is a copy of this repository. This method is very convenient and well-suited for a standalone documentation repository.
-
-The second method is to add this repository as a remote to your existing repository. This will allow you to pull in changes from this repository to a branch in your repository. This method allows you to keep your documentation in the same repository as your code. This method is well-suited for a documentation site that is part of a larger project.
+The second method is to add this repository as a remote to your existing repository. This will allow you to pull in changes from this repository to a branch in your repository. This method allows you to keep your documentation in the same repository as your code. This method is well-suited for a documentation site that is part of a larger project. Use this method if your architecture is small enough to fit in a single repository.
 
 ### Template Adoption Method
 
