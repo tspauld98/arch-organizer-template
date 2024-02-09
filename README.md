@@ -152,6 +152,7 @@ The following dependencies and plugins are currently configured and included in 
 
 - [x] ~~Fix the logo.~~
 - [x] ~~Fix the sidebar and pagination to work with individual artifact pages.~~
-- [ ] Add placeholder files for each artifact type.
+- [x] ~~Add placeholder files for each artifact type.~~
 - [ ] Update the Overview page to describe the architecture organizer.
 - [ ] Update the placeholder files to contain example artifacts.
+- [ ] Add decisions to the Decision Log.
