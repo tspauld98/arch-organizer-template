@@ -1,10 +1,12 @@
+# Architecture Organizer Template
+
 - [Overview](/)
 - [Logical View](/logical/)
   - [Context Diagram](/logical/ContextDiagram.md)
   - [Key Use Cases](/logical/KeyUseCases.md)
   - [Capability Map](/logical/CapabilityMap.md)
   - [Target-State Solution](/logical/TargetStateSolution.md)
-  - [Representative Sequence Diagrams](/logical/RepresentativeSequenceDiagrams.md)
+  - [Representative Sequence Diagrams](/logical/RepresentativeSeqDiagrams.md)
   - [Journey Plan](/logical/JourneyPlan.md)
 - [Deployment View](/deployment/)
   - [Domain Object Model](/deployment/DomainObjectModel.md)
