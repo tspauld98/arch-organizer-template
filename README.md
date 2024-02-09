@@ -150,8 +150,8 @@ The following dependencies and plugins are currently configured and included in 
 
 ## Future Enhancements
 
-- [ ] Fix the logo.
-- [ ] Fix the sidebar and pagination to work with individual artifact pages.
+- [x] ~~Fix the logo.~~
+- [x] ~~Fix the sidebar and pagination to work with individual artifact pages.~~
 - [ ] Add placeholder files for each artifact type.
 - [ ] Update the Overview page to describe the architecture organizer.
 - [ ] Update the placeholder files to contain example artifacts.
