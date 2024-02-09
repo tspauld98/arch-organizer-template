@@ -1,4 +1,4 @@
-# Architecture Organizer Template
+# [Architecture Organizer Template](/)
 
 - [Overview](/)
 - [Logical View](/logical/)
