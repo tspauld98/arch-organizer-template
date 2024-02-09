@@ -21,5 +21,6 @@
   - [Activity Diagrams](/detailed/ActivityDiagrams.md)
   - [Data Models](/detailed/DataModels.md)
 - [Decision Log](/decisions/)
+  - [0001 - Record Architecture Decisions](/decisions/0001-record-architecture-decisions.md)
 - [Glossary](/Glossary.md)
 - [Template Content](/templates/)
