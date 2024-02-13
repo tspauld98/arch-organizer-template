@@ -29,11 +29,20 @@ The following decisions have been superseded or rescinded and are no longer in e
 
 ### Pre-requisites
 
-To author decisions, you will need to install [adr-tools]()
+To author decisions, you will need to install [adr-tools](https://github.com/npryce/adr-tools) on your local machine.  This toolset will help you create new ADR documents ensuring they are in the correct location and using the correct template.
+
+In addition to `adr-tools`, since these decisions are tracked in a Git repository, you will need to have `git` installed on your local machine and the local repository on your machine should be synced with an `origin` repository on Github.
 
 ### Requesting a Decision
 
-To request a decision, create an issue in this repository with the following information:
+To request a decision, [create an issue](https://github.com/tspauld98/arch-organizer-template/issues/new) for this repository on Github with the following information:
+
+* Title: A short title for the decision
+* Description: A detailed description of the requested decision with the following information:
+  * Context: The issue motivating the decision, and any context that influences or constrains the decision.
+  * Scope: The scope of the requested decision (i.e. specific component, service-wide or organization-wide).
+  * Type: The type of the requested decision (i.e. Technology Selection or Process Change).
+* Labels: Add the `Requested` label to the issue to distinguish it from a normal change request.
 
 ### Authoring a Decision
 
