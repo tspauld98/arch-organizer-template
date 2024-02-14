@@ -93,18 +93,22 @@ When you are either asked to review a decision or you self-assign yourself to re
 
 ## Authoring Good Decisions
 
-TBD
+The key to authoring good decisions is to ensure that any dissent is raised early and addressed as completely as possible.  This means that the decision should be reviewed by all stakeholders that might disagree with the decision and that their feedback should be addressed in the decision.  This is the only way to ensure that the decision is made with the best information available and that it is made with the best interests of the organization in mind.  The **Context** section of the decision should be as lengthly as required to provide a new reader with all the information they need to understand the decision.  The **Decision** section should be as clear and concise as possible to ensure that the decision is easy to understand and easy to reference in the future.  The **Consequences** section should outline the impact of the decision and any implementation details that might be required to implement the decision.  In addition, if the decision has other implications, they should be outlined in this section as well.  Finally, it is vitally important that a formal decision process is not used as a means to block progress through passive disagreement.  Recognizing productive dissent versus unproductive dissent and enlisting the approver to help navigate the latter is crucial to formulated long-lasting formal decisions.
 
 ## Decision Lifecycle
 
-TBD
+The following diagram illustrates the lifecycle of a decision:
 
-### Status
+```mermaid
+graph TD
+    A[Requested] --> B[In Progress]
+    B --> C[Comments Requested]
+    C --> B
+    C --> D[Approval Requested]
+    D --> E[Approved]
+    E --> F[Superseded]
+    E --> G[Rescinded]
+    F --> G
+```
 
-* Requested
-* In Progress
-* Comments Requested
-* Approval Requested
-* Approved
-* Superseded
-* Rescinded
+Decisions in the `Requested` and `In Progress` states are considered to be in draft mode and are not time-bound.  Decisions in the `Comments Requested` state are open for comments for a period of no more than 7 days.  Decisions in the `Approval Requested` state should not be open for approval for longer than 7 days.  Decisions in the `Approved` state are considered to be in effect and are not time-bound.  Decisions in the `Superseded` and `Rescinded` states are considered to be no longer in effect and are not considered to be current.
