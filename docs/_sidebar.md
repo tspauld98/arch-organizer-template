@@ -22,5 +22,8 @@
   - [Data Models](/detailed/DataModels.md)
 - [Decision Log](/decisions/)
   - [0001 - Record Architecture Decisions](/decisions/0001-record-architecture-decisions.md)
+  - [0002 - First Principles](/decisions/0002-first-principles.md)
+  - [0003 - Technology Stack](/decisions/0003-technology-stack.md)
+  - [0004 - Initial Release](/decisions/0004-initial-release.md)
 - [Glossary](/Glossary.md)
 - [Template Content](/templates/)
