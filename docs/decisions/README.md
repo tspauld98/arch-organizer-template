@@ -46,9 +46,50 @@ To request a decision, [create an issue](https://github.com/tspauld98/arch-organ
 
 ### Authoring a Decision
 
+The basic process for authoring a decision is illustrated in the following diagram:
+
+```mermaid
+flowchart TD
+    A[1. Request decision] --> B[2. Create new decision branch]
+    B --> C[3. Checkout new branch]
+    C --> D[4. Create new ADR document]
+    D --> E[5. Open draft pull request]
+    E --> F[6. Draft/Update ADR with contributors]
+    F --> G[7. Review decision with approver]
+    G --> H{Is Decision Ready for Comments?}
+    H -->|Yes| I[8. Open decision for comments]
+    H-->|No| F
+    I --> J{Can comments be addressed in the decision?}
+    J -->|Yes| K[9. Adjust decision language based on comments]
+    J -->|No| L[10. Approver determines next steps]
+    K --> M{Is decision acceptable to all reviewers?}
+    M -->|Yes| N[11. Approve decision]
+    M -->|No| J
+    N --> O[12. Merge and close pull request]
+```
+
+Here is more detail for each step in the process:
+
+1. **Request decision** (OPTIONAL): Create an issue in the repository to request a new decision.
+2. **Create new decision branch**: Create a new branch in the repository to author the decision.
+3. **Checkout new branch**: Checkout the new branch on your local machine.
+4. **Create new ADR document**: Use `adr-tools` to create a new ADR document in the correct location with the correct template using the `adr new` command.  Commit the new ADR document to the new branch and push the branch to the origin repository.
+5. **Open draft pull request**: Open a new draft pull request for the new branch to begin the collaboration process.
+6. **Draft/Update ADR with contributors**: Work with other contributors to draft and update the ADR document with the necessary information to complete the decision.
+7. **Review decision with approver**: Review the decision with the approver to ensure it is ready for comments.
+8. **Open decision for comments**: Open the decision for comments by adding the `Comments Requested` label to the pull request, taking the pull request out of draft mode, and notifying the stakeholders that the decision is ready for comments.
+9. **Adjust decision language based on comments** (OPTIONAL): If comments are received during the prescribed comment period and they ***CAN*** be addressed by changing the decision, adjust the decision language based on the comments and review the decision with the approver to ensure it is address all feedback.
+10. **Approver determines next steps** (OPTIONAL): If comments are received during the prescribed comment period and they ***CANNOT*** be addressed by changing the decision as it is currently formulated, the approver will determine the next steps.
+11. **Approve decision**: Assuming all comments can be satisfactorly resolved and if the decision is acceptable to all reviewers, approve the decision by adding the `Approved` label to the pull request.
+12. **Merge and close pull request**: The approver merges the pull request into the main branch and close the pull request.
+
 ### Contributing to a Decision
 
+As a contributor, your responsibility is to work with the decision author to draft and update the ADR document with the necessary information to complete the decision.  This may include providing feedback on the decision, suggesting changes to the decision, and reviewing the decision with stakeholders you know that might disagree with the decision.  These contributions take the form of **comments on the pull request** for the decision, **commits to the branch** for the decision, and/or a **formal pull request review** with comments aimed at specific parts of the decision.
+
 ### Reviewing a Decision
+
+When you are either asked to review a decision or you self-assign yourself to review a decision, the proper methode for reviewing a decision is to use the **pull request review** feature in Github.  This feature allows you to comment on specific parts of the decision, suggest changes to the decision, and approve the decision when you are satisfied with the decision. By using the pull request review feature, it preserves the history of the decision as added context for future reviewers.
 
 ## Authoring Good Decisions
 
