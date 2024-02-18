@@ -14,6 +14,9 @@ This section is considered:  **Mandatory**
 
 In addition to the illustration below, occasionally a textual description of the context diagram is useful especially entities such as the `Actors` or `Dependent Systems` are not self-explanatory.
 
+<div style="width:100%; text-align: center; border-style: solid;">
+<br/>
+
 ```mermaid
 graph TD
   subgraph Actors
@@ -34,3 +37,6 @@ graph TD
   A --> F
   A --> G
 ```
+
+<br/>
+</div>

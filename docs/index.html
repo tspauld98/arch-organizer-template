@@ -125,7 +125,19 @@
 
   <script type="module">
     import mermaid from "./_vendors/mermaid-10.6.1/dist/mermaid.esm.mjs";
-    mermaid.initialize({ startOnLoad: true });
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+      //  darkmode: true
+        primaryColor: '#DDF4FF',
+      //  primaryTextColor: '#FFFFFF',
+      //  primaryBorderColor: '#7C0000',
+        lineColor: '#808080',
+      //  secondaryColor: '#006100',
+      //  tertiaryColor: '#FFFFFF'
+      }
+    });
     window.mermaid = mermaid;
   </script>
   <script src="./_vendors/docsify-mermaid-2.0.1/dist/docsify-mermaid.js"></script>

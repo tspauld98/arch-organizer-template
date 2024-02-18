@@ -33,7 +33,7 @@ The purpose of this site is to provide a template for creating an architecture o
 
 As the target project is developed, the artifacts in the organizer will be updated to reflect the current state of the system in the order they are listed.  The ***Logical View*** artifacts are required first.  As the design gets closer to finalized for the next release, artifacts from the ***Deployment View*** and ***Detailed View*** will be added to or updated in the organizer.  Individual artifacts always have **Purpose** and **Electivity** sections to help guide the author in customizing the artifact for their design.
 
-The artifacts in the template illustrate a fictional design for an on-line banking system.
+The artifacts in the template illustrate a fictional design for an on-line banking system. Artifacts in this template use in-line `html` tags for formatting `mermaid` diagrams to improve readability.  This formatting is entirely optional and can be removed or replaced with other formatting as needed.
 
 ## Lifecycle
 

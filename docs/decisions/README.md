@@ -48,6 +48,9 @@ To request a decision, [create an issue](https://github.com/tspauld98/arch-organ
 
 The basic process for authoring a decision is illustrated in the following diagram:
 
+<div style="width:100%; text-align: center; border-style: solid;">
+<br/>
+
 ```mermaid
 flowchart TD
     A[1. Request decision] --> B[2. Create new decision branch]
@@ -67,6 +70,9 @@ flowchart TD
     M -->|No| J
     N --> O[12. Merge and close pull request]
 ```
+
+<br/>
+</div>
 
 Here is more detail for each step in the process:
 
@@ -99,6 +105,9 @@ The key to authoring good decisions is to ensure that any dissent is raised earl
 
 The following diagram illustrates the lifecycle of a decision:
 
+<div style="width:100%; text-align: center; border-style: solid;">
+<br/>
+
 ```mermaid
 graph TD
     A[Requested] --> B[In Progress]
@@ -110,5 +119,8 @@ graph TD
     E --> G[Rescinded]
     F --> G
 ```
+
+<br/>
+</div>
 
 Decisions in the `Requested` and `In Progress` states are considered to be in draft mode and are not time-bound.  Decisions in the `Comments Requested` state are open for comments for a period of no more than 7 days.  Decisions in the `Approval Requested` state should not be open for approval for longer than 7 days.  Decisions in the `Approved` state are considered to be in effect and are not time-bound.  Decisions in the `Superseded` and `Rescinded` states are considered to be no longer in effect and are not considered to be current.
