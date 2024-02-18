@@ -21,7 +21,7 @@ The type of the decision: Technology/Approach Selection, Pattern/Terminology/Pro
 
 ## Status
 
-STATUS
+In Progress
 
 ## Context
 

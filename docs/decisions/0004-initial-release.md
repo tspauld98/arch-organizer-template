@@ -4,33 +4,33 @@ Date: 2024-02-12
 
 ## Roles
 
-| Role            | Occupants                                                                        |
-| --------------- | -------------------------------------------------------------------------------- |
-| Driver          | The person driving the decision to approval.                                     |
-| Approver        | The person who can approve the decision.                                         |
-| Contributors    | The people who help the driver draft and perfect the decision.                   |
-| Target Audience | The people who should be informed of the results of the decision and its impact. |
+| Role            | Occupants                                     |
+| --------------- | --------------------------------------------- |
+| Driver          | [Tim Spaulding](https://github.com/tspauld98) |
+| Approver        | [Tim Spaulding](https://github.com/tspauld98) |
+| Contributors    | [Tim Spaulding](https://github.com/tspauld98) |
+| Target Audience | Users of this template                        |
 
 ## Scope
 
-The scope of the decision: Project, Service, Platform or Organization.
+The scope of the decision: **Architecture Organizer Template Project**.
 
 ## Type
 
-The type of the decision: Technology/Approach Selection, Pattern/Terminology/Process Definition, or Standard Declaration.
+The type of the decision: **Design Approval**.
 
 ## Status
 
-Accepted
+Approved
 
 ## Context
 
-The issue motivating this decision, and any context that influences or constrains the decision.
+Whenever a design is declared complete, it is important to formally document the approval of the design in conjunction with its release.  This decision is to document the approval of the initial design of the Online Banking System.
 
 ## Decision
 
-The change that we're proposing or have agreed to implement.
+* The [initial release, v1.0.0](https://github.com/tspauld98/arch-organizer-template/releases/tag/v1.0.0), of the Online Banking System in the Architecture Organizer Template project is approved.
 
 ## Consequences
 
-What becomes easier or more difficult to do and any risks introduced by the change that will need to be mitigated.  This section should also include any direction on the implementation of the decision required.
+Versioning of the design will be managed using [Semantic Versioning](https://semver.org/).  The version of the template and the version of the design are synominous since they are located in the same repository.  Any changes to the design or the template will require a new decision to be made in conjunction with its release superseding the decision documenting the previous version.  
