@@ -8,7 +8,7 @@ The context diagram is a simple diagram that shows the system as a single entity
 
 ## Electivity
 
-This section is considered:  **Mandatory**
+This artifact is considered:  **Mandatory**
 
 ## System Context Diagram
 
