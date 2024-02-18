@@ -1,80 +1,20 @@
-# Examples
+# Detailed View
 
-This page contains examples of the different types of content that can be added to your documentation using some of the plugins that are included with this template.  You can find more information about the plugins included with this template [here](https://github.com/tspauld98/basic-docsify-gh-template).
+## Purpose
 
-## Tabbed Content Example
+The purpose of the detailed view is to describe the solution's inner design and structure with specifics regarding interfaces and contracts.  The detailed view is intended to brief developers, operations staff, and technical partners such as security and compliance teams.  The artifacts in the deployment view are at the `fish` level of abstraction.  Since it's not always necessary to document every detail of a solution, the artifacts in this view are considered optional.  It's important to create/maintain the artifacts in this section when the solution requires a large team of developers to build/maintain it or when the consumers of the solution are developers.  In more simple cases, well-commented and documented code may be sufficient for communicating the detailed view of the solution.
 
-<!-- tabs:start -->
+## Electivity
 
-### **First Tab**
+This section is considered:  **Optional**
 
-This is the first tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Artifacts
 
-### **Second Tab**
-
-This is the second tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### **Third Tab**
-
-This is the third tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<!-- tabs:end -->
-
-## Code Block Example
-
-```javascript
-// This is a comment
-var x = 1;
-```
-
-## Mermaid Diagram Examples
-
-***You can find more information about all the Mermaid diagrams supported [here](https://mermaid.js.org/intro/).***
-
-```mermaid
-%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-        'background': '#fff'
-    }
-  }
-}%%
-flowchart LR
-    subgraph subgraph1
-        direction TB
-        top1[top] --> bottom1[bottom]
-    end
-    subgraph subgraph2
-        direction TB
-        top2[top] --> bottom2[bottom]
-    end
-    %% ^ These subgraphs are identical, except for the links to them:
-
-    %% Link *to* subgraph1: subgraph1 direction is maintained
-    outside --> subgraph1
-    %% Link *within* subgraph2:
-    %% subgraph2 inherits the direction of the top-level graph (LR)
-    outside ---> top2
-```
-
-## PlantUML Diagram Examples
-
-***You can find more information about all the PlantUML diagrams supported [here](https://plantuml.com/).***
-
-```plantuml
-@startuml
-Alice -> Bob: Authentication Request [[$./other-file docs]]
-Bob --> Alice: Authentication Response [[$../other-file docs]]
-@enduml
-```
-
-```plantuml
-@startuml
-start
-:Hello world;
-:This is defined on
-several **lines**;
-stop
-@enduml
-```
+| Artifact | Description |
+| -------- | ----------- |
+| [Interface Definitions](/detailed/InterfaceDefinitions.md) | This artifact, when present, contains the definitions of any public interfaces for the solution including both user experience definitions (storyboards) and API specifications. |
+| [Class Diagrams](/detailed/ClassDiagrams.md) | The Class Diagrams artifact contains any class diagrams required to clarify the design or provide engineers with design direction and is only included as needed. |
+| [Sequence Diagrams](/detailed/ComponentDiagram.md) | The Sequence Diagrams artifact contains any sequence diagrams for use cases that are complex enough to require illustration for the engineers working on the solution. |
+| [State Diagrams](/detailed/StateDiagrams.md) | This artifact organizes and maintains any state diagrams required to clarify state changes occurring during the execution of complex use cases. |
+| [Activity Diagrams](/detailed/ActivityDiagrams.md) | This artifact contains activity diagrams for use cases as an alternative to using sequence diagrams.  Since there is significant overlap in purpose between sequence diagrams and activity diagrams, this section usually only contains either the Sequence Diagrams artifact or the Activity Diagrams artifact. Only very rarely does this section contain both artifacts. |
+| [Data Models](/detailed/DataModels.md) | The Data Models artifact is used to organize and maintain any data models that describe the persistence structure of the solution if needed.  The models in this artifact could be any combination of the following model types: SQL-based entity-relationship models, document models, name/value pair models, and/or blob models. |
