@@ -25,7 +25,7 @@ Use this method if you want to add a documentation site to an existing repositor
 1. Add this repository as a remote to your existing repository using the following command:
 
 ```bash
-git remote add upstream-template git@github.com:tspauld98/basic-docsify-gh-template.git
+git remote add upstream-template git@github.com:tspauld98/arch-organizer-template.git
 ```
 
 2. Fetch the contents of the remote repository using the following command:
