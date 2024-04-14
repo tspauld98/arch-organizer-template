@@ -10,4 +10,47 @@ This artifact is considered:  **Mandatory**
 
 ## Target-State Solution Diagram
 
+```mermaid
+flowchart TD
 
+subgraph "User Interface"
+    UI[User Interface] --> LB[Load Balancer]
+end
+
+subgraph "Load Balancer"
+    LB --> WF[Web Frontend]
+end
+
+subgraph "Web Frontend"
+    WF --> |HTTPS| API[API Gateway]
+end
+
+subgraph "API Gateway"
+    API --> AS[Authentication Service]
+    API --> BS[Banking Service]
+    API --> MS[Notification Service]
+end
+
+subgraph "Authentication Service"
+    AS --> DB[Database]
+end
+
+subgraph "Banking Service"
+    BS --> DB
+    BS --> ESB[External Service Bus]
+end
+
+subgraph "Notification Service"
+    MS --> Email
+    MS --> SMS
+end
+
+subgraph "External Service Bus"
+    ESB --> EB[External Banking System]
+end
+
+subgraph "Database"
+    DB[User Data]
+    DB[Transactions]
+end
+```
