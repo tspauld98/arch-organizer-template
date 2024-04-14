@@ -10,47 +10,46 @@ This artifact is considered:  **Mandatory**
 
 ## Target-State Solution Diagram
 
+In addition to the illustration below, occasionally a textual description of the components that compose the target-state solution is useful especially when the components are not self-explanatory.
+
+<div style="width:100%; text-align: center; border-style: solid;">
+<br/>
+
 ```mermaid
 flowchart TD
 
-subgraph "User Interface"
-    UI[User Interface] --> LB[Load Balancer]
+subgraph "Browser"
+    RA[Banking React App]
 end
 
-subgraph "Load Balancer"
-    LB --> WF[Web Frontend]
-end
-
-subgraph "Web Frontend"
-    WF --> |HTTPS| API[API Gateway]
+subgraph "Web Server"
+    RA --> |HTTPS| WF[Banking Web Service]
 end
 
 subgraph "API Gateway"
+    WF --> |HTTPS| API[Banking GraphQL Supergraph]
+end
+
+subgraph "Services Layer"
     API --> AS[Authentication Service]
     API --> BS[Banking Service]
-    API --> MS[Notification Service]
+    API --> NS[Notification Service]
 end
 
-subgraph "Authentication Service"
-    AS --> DB[Database]
+subgraph "External Messaging Services"
+    BS --> |JMS| ESB1([Transactions Service Bus])
 end
 
-subgraph "Banking Service"
-    BS --> DB
-    BS --> ESB[External Service Bus]
+subgraph "External Notification Services"
+    NS --> |SMTP| NS1[[Email]]
+    NS --> |SMPP| NS2[[SMS]]
 end
 
-subgraph "Notification Service"
-    MS --> Email
-    MS --> SMS
-end
-
-subgraph "External Service Bus"
-    ESB --> EB[External Banking System]
-end
-
-subgraph "Database"
-    DB[User Data]
-    DB[Transactions]
+subgraph "Database Layer"
+    AS --> |JDBC| DB1[(User Data)]
+    BS --> |JDBC| DB2[(Transactions)]
 end
 ```
+
+<br/>
+</div>
