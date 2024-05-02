@@ -6,7 +6,7 @@ The purpose of the interface definitions is to specify the external interfaces t
 
 ## Electivity
 
-This section is considered:  **Optional**
+This section is considered:  **Mandatory, if Detailed View is included**
 
 ## Online Banking API Interface Definition
 

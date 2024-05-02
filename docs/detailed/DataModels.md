@@ -6,7 +6,7 @@ The purpose of the data models is to describe the data structures and relationsh
 
 ## Electivity
 
-This section is considered:  **Optional**
+This section is considered:  **Mandatory, if Detailed View is included**
 
 ## Online Banking Data Model
 
