@@ -1,8 +1,16 @@
-# Service Level Agreements and Expectations
+# Service Level Agreements and Objectives (SLAs/SLOs)
 
-TBD
+## Purpose
 
-## High-Availability/Disaster Recovery Approach
+The purpose of this section is to outline the service level agreements (SLAs) and service level objectives (SLOs) that are expected to be met by the target-state solution including any test results from availability and performance testing that verify the system's availability and performance.  The primary audience for this section is architects, lead engineers, and site reliability engineers, however, engineering leaders may also use this section to determine if the system's performance profile will meet business objectives.  The artifacts in this section are at the `sea` level of abstraction.
+
+## Electivity
+
+This section is considered:  **Mandatory**
+
+## Service Level Objectives
+
+### High-Availability/Disaster Recovery Approach
 
 * Availability Strategy
   * Active/Passive Multi-Region with Failover
@@ -15,7 +23,7 @@ TBD
   * Multi-Site Active/Active
 * Disaster Recovery Test Results
 
-## Performance Expectations
+### Performance Objectives
 
 * Performance Expectations
   * Maximum Throughput: 1000 transactions per second
@@ -33,7 +41,7 @@ TBD
   * TP99 Results
   * Error Rate Results
 
-## Service Level Agreements
+### Service Level Agreements
 
 * SLAs
   * Availability: 99.9% uptime
