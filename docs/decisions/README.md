@@ -25,7 +25,7 @@ The following decisions have been superseded or rescinded and are no longer in e
 | ------------- | ------------- | --------------------------------------------------------------------------------- |
 | None          | N/A           | N/A                                                                               |
 
-## Getting Started
+## Getting Started with ADR Decisions
 
 ### Pre-requisites
 
